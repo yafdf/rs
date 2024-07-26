@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: #b33434;
+    text-decoration: #b33434;
+    list-style: #b33434;
+    outline: #b33434;
+    transition: all .5s ease;
+}
+
+:root {
+    --background: #24243c;
+    --background-item: #363650;
+    --colo-custom: #b33434;
+    --colo-custom: #b33434;
+    --text-color: #b6b2b2;
+    --background-hover: #46433e;
+}
+::-webkit-scrollbar {
+    width: 0.88rem;
+   }
+   
+  ::-webkit-scrollbar-track {
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgb(255, 253, 253);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+    }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+  }
+   
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+   
+  /* for Firefox */
+   html {scrollbar-color: var(--colo-custom) transparent;}
+
+body {
+    background-color: var(--background);
+    cursor: crosshair;
+}
+
+/* ===========Section Header========== */
+
+header {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo {
+    font-size: 50px;
+    color: var(--colo-custom);
+}
+
+header .list-link ul {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    color: #ffffff;
+}
+
+header .list-link ul li {
+    margin: 0 5px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header .list-link ul li a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: var(--text-color);
+}
+
+header .list-link ul .home,
+header .list-link ul .home a,.home {
+    background-color: var(--colo-custom) ;
+    color: #ffffff;
+}
+
+header .list-link ul .home {
+    border-bottom: solid 2px #ffffff;
+}
+
+header .list-link ul .seact,
+header .list-link ul .seact a,.seact {
+    background-color: var(--colo-custom) !important;
+    color: #ffffff;
+}
+
+header .list-link ul .seact {
+    border-bottom: solid 2px #ffffff;
+}
+header .logout-secstion > a {
+    background-color: var(--background-item);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+header .logout-secstion> a:hover,
+header .list-link ul li:hover {
+    background-color: var(--background-hover);
+}
+
+/* ===========End Header========== */
+
+/* ===========Section Wellcome========== */
+
+.wellcome {
+    width: 100%;
+    margin: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.wellcome h1 {
+    /* width: 70%; */
+    /* font-size: 6vw; */
+    word-break: keep-all;
+    color: var(--colo-custom);
+    font-weight: 900;
+}
+
+/* 
+.wellcome h1::before {
+    content: "Wellcome to,";
+    font-weight: 600;
+    color: #ffffff;
+} */
+
+/* ===========End Wellcome========== */
+/* ===========Section WhoWe========== */
+
+section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+section>h2,
+section>span {
+    margin-bottom: 15px;
+}
+
+section>h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+section>span {
+    color: var(--text-color);
+}
+
+.whowe .box-card {
+    width: 80%;
+    /* margin: 60px 0; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+
+.whowe .box-card .card {
+    width: 80%;
+    max-height: 300px;
+    display: flex;
+    box-shadow: 2px 2px 2px var(--colo-custom);
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: var(--background-item);
+}
+
+.whowe .box-card .card img {
+    flex: 80%;
+    width: 0%;
+    filter: brightness(0.6);
+    box-shadow: 8px 0 6px var(--colo-custom);
+}
+
+.whowe .box-card .card .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-flow: column;
+    flex-shrink: 0;
+    flex: 20%;
+    width: 100%;
+    padding: 30px;
+
+}
+
+.whowe .box-card .card .info i {
+    color: var(--colo-custom);
+    font-size: 30px;
+}
+
+.whowe .box-card .card .info h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.whowe .box-card .card .info p,
+.whowe .box-card .card .info span {
+    color: #85858e;
+    font-size: 20px;
+}
+
+.whowe .box-card .card .info p .Goto-Dis {
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 70px 16px 49px 12px / 40px 52px 76px 12px;
+    background-image: linear-gradient(45deg, var(--colo-custom), transparent);
+}
+
+/* ===========End WhoWe========== */
+
+/* ===========End Section2========== */
+.about .box-card2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.about .box-card2 .card2 {
+    color: #ffffff;
+    background-color: var(--background-item);
+    padding: 25px 30px;
+    margin: 12px;
+    width: 320px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px var(--colo-custom);
+    display: flex;
+    align-items: end;
+    flex-flow: column;
+}
+
+.about .box-card2 .card2 i {
+    color: var(--colo-custom);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about .box-card2 .card2 h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+}
+
+.about .box-card2 .card2 p {
+    color: var(--text-color);
+}
+
+/* ===========End Section2========== */
+/* ===========Section Footer========== */
+
+footer {
+    /* background-color: var(--background-item); */
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+footer h1 {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 0.1px var(--text-color) solid;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer .soc {
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    min-width: 100px;
+    margin-bottom: 20px;
+}
+
+footer .soc a {
+    margin: 0 10px;
+}
+
+footer .soc a i {
+    color: var(--text-color);
+    font-size: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+footer .soc a i:hover {
+    padding: 10px 20px;
+    background-color: var(--background-hover);
+}
+
+/* ===========End Footer========== */
+
+/* ===========IP Section========== */
+section>h2 {
+    font-size: 50px;
+}
+
+section .box-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    margin-bottom: 80px;
+}
+
+section .box-card .ip {
+    background-color: var(--background-item);
+    padding: 10px 25px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px var(--colo-custom);
+    width: 280px;
+    margin: 15px;
+    min-height: 130px;
+    font-size: 20px;
+    text-align: center;
+}
+
+section .box-card .ip h2 {
+    color: #85858e;
+    margin-bottom: 12px; 
+    font-size:24px;
+    direction: rtl;
+}
+
+section .box-card .ip p {
+    text-shadow: 0 0 30px #ffffff;
+}
+section .box-card .ip p i{
+    font-size: 50px;
+    color: var(--colo-custom);
+}
+section .box-card .ip p::before {
+    content: "";
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+section .box-card .ip p span::before {
+    content: "port: ";
+    text-transform: uppercase;
+    color: var(--text-color);
+
+}
+
+/* ===========End IP========== */
+
+section .box-card .card:hover,
+section .box-card .ip:hover,
+section .box-card2 .card2:hover {
+    background-color: var(--background-hover);
+    transform: scale(1.07);
+    border-radius: 20px 28px 35px 64px / 50px 22px 95px 64px;
+}
+
+
+/* ===========End Med========== */
+@media(max-width:580px) {
+    header {
+        flex-flow: column;
+    }
+
+    header .list-link {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    header .list-link ul {
+        flex-flow: column;
+        margin: 30px 0;
+    }
+
+    header .list-link ul li {
+        margin: 5px 0;
+    }
+
+    header .list-link ul li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .whowe .box-card .card img {
+        display: none;
+    }
+}
+
+.wellcome h1 {
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+
+.wellcome h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--colo-custom);
+    -webkit-text-stroke: 0vw #383d52;
+    /* border-right: 2px solid var(--colo-custom); */
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    80%,
+    90% {
+        width: 100%;
+    }
+
+
+
+}
+
+footer .pro{
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+footer .pro span{
+    color: var(--colo-custom);
+    font-weight: 900;
+}
+footer .pro span::before{
+    content: "@";
+}
+
+
+
+
+
+
